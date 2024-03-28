@@ -1,0 +1,23 @@
+---
+kubernetes:
+  children:
+    controllers:
+      hosts:
+        "k8s0":
+          ansible_user: "fabrice"
+          ansible_host: "10.0.2.10"
+          ansible_ssh_private_key_file: "~/.ssh/id_ed25519"
+    workers:
+      hosts:
+        "k8s1":
+          ansible_user: "fabrice"
+          ansible_host: "10.0.2.11"
+          ansible_ssh_private_key_file: "~/.ssh/id_ed25519"
+        "k8s2":
+          ansible_user: "fabrice"
+          ansible_host: "10.0.2.12"
+          ansible_ssh_private_key_file: "~/.ssh/id_ed25519"
+        "k8s3":
+          ansible_user: "fabrice"
+          ansible_host: "10.0.2.13"
+          ansible_ssh_private_key_file: "~/.ssh/id_ed25519"

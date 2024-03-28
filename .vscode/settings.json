@@ -21,7 +21,28 @@
     "vs-kubernetes": {
         "vs-kubernetes.kubeconfig": "./kubeconfig",
         "vs-kubernetes.knownKubeconfigs": [
-          "./kubeconfig"
-      ]
-    }
+            "./kubeconfig"
+        ]
+    },
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#f1cea2",
+        "activityBar.background": "#f1cea2",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "commandCenter.border": "#15202b99",
+        "sash.hoverBorder": "#f1cea2",
+        "statusBar.background": "#eab676",
+        "statusBar.border": "#eab676",
+        "statusBar.foreground": "#15202b",
+        "statusBarItem.hoverBackground": "#e39e4a",
+        "statusBarItem.remoteBackground": "#eab676",
+        "statusBarItem.remoteForeground": "#15202b",
+        "tab.activeBorder": "#f1cea2",
+        "titleBar.activeBackground": "#eab676",
+        "titleBar.activeForeground": "#15202b",
+        "titleBar.border": "#eab676",
+        "titleBar.inactiveBackground": "#eab67699",
+        "titleBar.inactiveForeground": "#15202b99"
+    },
+    "peacock.remoteColor": "#eab676"
 }
