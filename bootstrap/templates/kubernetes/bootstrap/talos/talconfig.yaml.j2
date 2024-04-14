@@ -41,7 +41,7 @@ nodes:
     controlPlane: #{ (item.controller) | string | lower }#
     networkInterfaces:
       - deviceSelector:
-          hardwareAddr: "#{ item.talos_nic }#"
+          hardwareAddr: "#{ item.talos_nic | lower }#"
         dhcp: false
         #% if bootstrap_talos.vlan %#
         vlans:
@@ -143,9 +143,11 @@ patches:
   - |-
     machine:
       sysctls:
-        fs.inotify.max_queued_events: 65536
-        fs.inotify.max_user_watches: 524288
-        fs.inotify.max_user_instances: 8192
+        fs.inotify.max_queued_events: "65536"
+        fs.inotify.max_user_watches: "524288"
+        fs.inotify.max_user_instances: "8192"
+        net.core.rmem_max: "2500000"
+        net.core.wmem_max: "2500000"
 
   # Mount openebs-hostpath in kubelet
   - |-
